@@ -51,8 +51,8 @@ author:
 menu:
   - title:             Example
     url:               /example/
-  - title:             Documentation
-    url:               /docs/
+  - title:             Home / School
+    url:               /school/
   - title:             About
     url:               /about/
 
@@ -294,6 +294,7 @@ collections:
 
   projects:
     permalink:         /projects/:path/
+    output:            true
     output:            true
 
 
