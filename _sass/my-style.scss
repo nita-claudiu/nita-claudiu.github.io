@@ -1,36 +1,12 @@
 .achievements {
-  .achievement-list { list-style: none; padding: 0; }
-  .achievement-card {
-    margin: 1rem 0;
-    padding: 1.1rem 1.25rem;
-    border: 1px solid rgba(127, 127, 127, .25);
-    border-radius: .5rem;
-  }
-  .achievement-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-  h3 { margin: 0; }
-  .achievement-medal {
-    display: inline-grid;
-    place-items: center;
-    min-width: 3.2rem;
-    height: 3.2rem;
-    padding: 0 .35rem;
-    border: 2px solid rgba(255,255,255,.65);
-    border-radius: 50%;
-    color: #33220b;
-    font-size: .72rem;
-    font-weight: 800;
-    text-shadow: 0 1px rgba(255,255,255,.7);
-    box-shadow: 0 2px 9px rgba(0,0,0,.25), inset 0 1px 5px rgba(255,255,255,.8);
-  }
-  .gold { background: radial-gradient(circle at 32% 24%, #fff8bf, #ffd54a 42%, #bd7800 100%); }
-  .silver { background: radial-gradient(circle at 32% 24%, #fff, #dce3e9 42%, #87929c 100%); }
-  .bronze { background: radial-gradient(circle at 32% 24%, #ffe0b8, #d28a4f 42%, #78421f 100%); }
+  .achievement-list { padding-left: 1.6rem; }
+  .achievement-list li { margin: 1rem 0; font-size: 1.3rem; line-height: 1.55; }
+  .achievement-medal { margin-right: .45rem; font-size: 1.35em; vertical-align: -.08em; }
 }
 
 .featured-achievement {
-  border-color: #d6b06a;
-  background: linear-gradient(130deg, rgba(214,176,106,.2), rgba(214,176,106,.04));
-  box-shadow: 0 8px 28px rgba(214,176,106,.15);
+  color: #f2c94c;
+  font-weight: 700;
 }
 
 .dl-table {
