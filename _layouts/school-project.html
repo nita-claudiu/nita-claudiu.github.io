@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <style>
+    body { margin: 0; padding: 5rem 1.5rem 2rem; font: 1rem/1.6 system-ui, sans-serif; color: #eee; background: #111; }
+    .back { position: absolute; top: 1rem; left: 1rem; color: inherit; }
+    main { max-width: 70rem; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <a class="back" href="{{ '/school/' | relative_url }}">← Back to Home / School</a>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
