@@ -257,7 +257,6 @@ wechat:
 discord:
   name: Discord
   icon: icon-discord
-  prepend: https://discord.com/invite/
 mastodon:
   name: Mastodon
   icon: icon-mastodon

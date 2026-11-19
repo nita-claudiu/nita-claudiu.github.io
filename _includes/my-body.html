@@ -49,6 +49,22 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
   });
 </script>
 
+<script>
+  document.addEventListener('click', async function (event) {
+    const link = event.target.closest('a[data-copy]');
+    if (!link) return;
+
+    event.preventDefault();
+    try {
+      await navigator.clipboard.writeText(link.dataset.copy);
+      link.title = 'Copied!';
+      window.setTimeout(() => { link.title = 'Copy Discord username'; }, 1600);
+    } catch (error) {
+      console.error('Could not copy the Discord username.', error);
+    }
+  });
+</script>
+
 {% comment %}
 <!--
 Example code for using Matamo as alternative analytics solution.
