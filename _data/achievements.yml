@@ -1,0 +1,22 @@
+# Add entries under 2026. Only title is required.
+# Optional fields: place (1-3 shows a medal), date, description, class, custom_html.
+# Example basic entry:
+#  - title: Competition name
+#    place: 1
+# Example custom entry:
+#  - title: Special achievement
+#    class: featured-achievement
+#    custom_html: |
+#      <p>Add any custom HTML here.</p>
+2026:
+  - title: National Romanian Cybersecurity Olympiad (10th grade)
+    place: 2
+  - title: Regional Romanian Cybersecurity Olympiad (10th grade)
+    place: 1
+  - title: BitDefender Cybersecurity Grand Prix Pre-Quals (Iasi)
+    place: 1
+  - title: BitDefender Cybersecurity Grand Prix Quals (Iasi)
+    place: 3
+  - title: Algolymp CTF Quals
+    place: 6
+  - title: Participation in the national Cybersecutity team selection trials

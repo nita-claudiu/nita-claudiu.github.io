@@ -49,8 +49,10 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             Cyber
     url:               /example/
+  - title:             Achievements
+    url:               /achievements/
   - title:             School
     url:               /school/
   - title:             About
