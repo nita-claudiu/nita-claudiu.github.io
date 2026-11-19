@@ -51,12 +51,13 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 
 <script>
   document.addEventListener('click', async function (event) {
-    const link = event.target.closest('a[data-copy]');
+    const link = event.target.closest('.sidebar-social a[title="Discord"], .sidebar-social a[data-copy]');
     if (!link) return;
 
     event.preventDefault();
     try {
-      await navigator.clipboard.writeText(link.dataset.copy);
+      const username = link.dataset.copy || '{{ site.data.authors.author1.social.discord | escape }}';
+      await navigator.clipboard.writeText(username);
       link.title = 'Copied!';
       window.setTimeout(() => { link.title = 'Copy Discord username'; }, 1600);
     } catch (error) {

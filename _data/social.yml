@@ -257,6 +257,7 @@ wechat:
 discord:
   name: Discord
   icon: icon-discord
+  prepend: 'https://discord.com/'
 mastodon:
   name: Mastodon
   icon: icon-mastodon
