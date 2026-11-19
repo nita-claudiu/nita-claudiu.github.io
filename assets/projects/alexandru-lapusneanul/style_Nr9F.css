@@ -36,3 +36,9 @@ main{background:#17100f}
 .hero-shade{background:linear-gradient(90deg,transparent 30%,#170e0f88 68%,#170e0fcc),radial-gradient(ellipse at 0% 0%,#05030377,transparent 65%)}
 @media(max-width:1000px){#cine,#harta,#familia,#urme,#atelier,#jocuri,#surse{padding-top:75px;padding-bottom:75px}}
 @media(max-width:760px){#cine,#harta,#familia,#urme,#atelier,#jocuri,#surse{padding-top:65px;padding-bottom:65px}.hero-shade{background:linear-gradient(0deg,#17100eb3,#17100e30)}}
+
+/* Fade in Alexandru's portrait and blend it into the title with a dark gradient. */
+@keyframes hero-image-fade{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:scale(1.03)}}
+.hero-image{background-image:url('/assets/projects/alexandru-lapusneanul/lapusneanu_Nr9F.jpg')!important;animation:hero-image-fade 1.6s ease-out both}
+.hero-shade{background:linear-gradient(90deg,rgba(24,17,12,.05),rgba(20,16,12,.42) 40%,rgba(20,16,12,.9) 100%),linear-gradient(0deg,#17100fe8,transparent 38%,#17100f55)!important}
+@media(prefers-reduced-motion:reduce){.hero-image{animation:none;opacity:1;transform:scale(1.03)}}
